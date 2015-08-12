@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">SmartCalsVendingMachine</string>
+
+    <string name="start">Start</string>
+    <string name="enter_ip">Enter IP</string>
+    <string name="employee_login">Employee Login</string>
+    <string name="alarm">Alarm On/Off</string>
+    <string name="title_activity_customer_start">CustomerStart</string>
+
+    <string name="enter_ip_sentence">Please enter the server IP:</string>
+    <string name="server_ip">Server IP</string>
+    <string name="ok">OK</string>
+    <string name="enter">Enter</string>
+    <string name="back">Go back</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="view_items">View Items</string>
+    <string name="search_suggestion">Search/Suggestions</string>
+    <string name="smart_cal_card">SmartCal Card</string>
+    <string name="drink">Drink</string>
+    <string name="snack">Snack</string>
+    <string name="buy_with_coins">Buy with Coins</string>
+    <string name="buy_with_card">Buy with SmartCal Card</string>
+    <string name="buy_it">Buy it</string>
+    <string name="coin_sentence">Please enter the amount of coins you have inserted:</string>
+    <string name="card_sentence">Please swipe your SmartCal card</string>
+    <string name="card_number">SmartCal card number</string>
+    <string name="swipe">Swipe</string>
+    <string name="buy_card">Buy a SmartCal card</string>
+    <string name="check_balance">Check Balance</string>
+    <string name="buy_card_sentence">Which card would you like to buy?</string>
+    <string name="ten">$10</string>
+    <string name="twenty">$20</string>
+    <string name="fifty">$50</string>
+    <string name="sort_by_calories">Low Calories</string>
+    <string name="sort_by_sugar">Low Sugar</string>
+    <string name="search_title">Smart Search</string>
+    <string name="from">from</string>
+    <string name="to">to</string>
+    <string name="calories">Calories:</string>
+    <string name="sugar">Sugar:</string>
+    <string name="ca_unit">Ca</string>
+    <string name="gram">g</string>
+    <string name="search">Search</string>
+
+    <string name="employee_id">Employee ID</string>
+    <string name="employee_password">Employee Password</string>
+
+    <string name="register">Register the vending machine</string>
+    <string name="refill">Refill the vending machine</string>
+    <string name="manage_item">Manage items</string>
+    <string name="logout">Log out</string>
+
+    <string name="address_textview">Please enter the address of the vending machine:</string>
+    <string name="next">Next</string>
+
+    <string name="items_textview">Choose items:</string>
+    <string name="item_code_text">Item code: </string>
+    <string name="item_price_text">Item price: </string>
+
+    <string name="table_code_text">Code</string>
+    <string name="table_name_text">Name</string>
+    <string name="table_price_text">Price</string>
+    <string name="table_capacity_text">Capacity</string>
+    <string name="table_quantity_text">Quantity</string>
+    <string name="table_button">Button</string>
+    <string name="finish">Finish</string>
+
+    <string name="add_full">Add full</string>
+
+    <string name="add_item">Add item</string>
+    <string name="delete_item">Delete item</string>
+
+    <string name="title_activity_customer_item_list">CustomerItemList</string>
+    <string name="title_activity_item_detail">ItemDetail</string>
+    <string name="title_activity_customer_transaction">CustomerTransaction</string>
+    <string name="title_activity_employee_options">EmployeeOptions</string>
+    <string name="title_activity_employee_register">EmployeeRegister</string>
+    <string name="title_activity_employee_refill">EmployeeRefill</string>
+    <string name="title_activity_register_items">RegisterItems</string>
+    <string name="title_activity_register_item_numbers">RegisterItemNumbers</string>
+    <string name="title_activity_customer_card">CustomerCard</string>
+    <string name="title_activity_customer_suggestion">CustomerSuggestion</string>
+    <string name="title_activity_manage_items">ManageItems</string>
+    <string name="title_activity_add_item">AddItem</string>
+    <string name="title_activity_delete_item">DeleteItem</string>
+    <string name="title_activity_add_item_numbers">AddItemNumbers</string>
+    <string name="title_activity_customer_item_type">CustomerItemType</string>
+    <string name="title_activity_buy_with_coins">BuyWithCoins</string>
+    <string name="title_activity_buy_with_card">BuyWithCard</string>
+    <string name="title_activity_customer_buy_card">CustomerBuyCard</string>
+    <string name="title_activity_customer_check_balance">CustomerCheckBalance</string>
+    <string name="title_activity_customer_transfer_balance">CustomerTransferBalance</string>
+    <string name="title_activity_local_service_broadcaster">LocalServiceBroadcaster</string>
+    <string name="title_activity_customer_search_result">CustomerSearchResult</string>
+</resources>
