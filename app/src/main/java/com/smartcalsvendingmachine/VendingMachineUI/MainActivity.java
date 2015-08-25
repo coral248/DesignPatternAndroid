@@ -19,14 +19,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.smartcalsvendingmachine.Database.VendingMachineDatabase;
+import com.smartcalsvendingmachine.SQLiteDatabase.VendingMachineDatabase;
 import com.smartcalsvendingmachine.R;
-import com.smartcalsvendingmachine.SocketProxy.CustomerServerProxy;
-import com.smartcalsvendingmachine.SocketProxy.EmployeeServerProxy;
-import com.smartcalsvendingmachine.SocketProxy.MachineServerProxy;
-import com.smartcalsvendingmachine.VendingMachineUI.Customer.CustomerOptions;
-import com.smartcalsvendingmachine.VendingMachineUI.Employee.EmployeeOptions;
-import com.smartcalsvendingmachine.VendingMachineUI.Machine.AlarmNotificationReceiver;
+import com.smartcalsvendingmachine.ServerProxy.CustomerClientProxy;
+import com.smartcalsvendingmachine.ServerProxy.EmployeeClientProxy;
+import com.smartcalsvendingmachine.ServerProxy.MachineClientProxy;
+import com.smartcalsvendingmachine.VendingMachineUI.CustomerUI.CustomerOptions;
+import com.smartcalsvendingmachine.VendingMachineUI.EmployeeUI.EmployeeOptions;
+import com.smartcalsvendingmachine.VendingMachineUI.MachineUI.AlarmNotificationReceiver;
 
 import java.io.File;
 
@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
     public static VendingMachineDatabase VBD;
     public static String mDirPath;
     public static int machineID;
-    public static CustomerServerProxy cProxy;
-    public static EmployeeServerProxy eProxy;
-    public static MachineServerProxy mProxy;
+    public static CustomerClientProxy cProxy;
+    public static EmployeeClientProxy eProxy;
+    public static MachineClientProxy mProxy;
 
     private AlarmManager mAlarmManager;
     private PendingIntent mNotificationReceiverPendingIntent;
@@ -56,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
         editor.apply();
 
         VBD = new VendingMachineDatabase(getApplicationContext());
-        cProxy = new CustomerServerProxy();
-        eProxy = new EmployeeServerProxy();
-        mProxy = new MachineServerProxy();
+        cProxy = new CustomerClientProxy();
+        eProxy = new EmployeeClientProxy();
+        mProxy = new MachineClientProxy();
 
         File parentDir = Environment.getExternalStoragePublicDirectory(
                 Environment.DIRECTORY_DOCUMENTS);
@@ -210,7 +210,8 @@ public class MainActivity extends AppCompatActivity {
 
         protected String doInBackground(String... params) {
             try {
-                return MainActivity.eProxy.connect(params[0], Integer.parseInt(params[1]), params[2]);
+                MainActivity.eProxy.connect(params[0], Integer.parseInt(params[1]), params[2]);
+                return "";
             } catch (Exception e) {
                 e.printStackTrace();
                 return null;

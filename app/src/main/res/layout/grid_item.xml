@@ -15,7 +15,7 @@
         android:id="@+id/item_name"
         android:layout_gravity="center_horizontal"
         android:textStyle="bold"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textColor="#040404" />
 
     <TextView
@@ -24,7 +24,7 @@
         android:id="@+id/item_price"
         android:layout_gravity="center_horizontal"
         android:textStyle="bold"
-        android:textSize="20dip"
+        android:textSize="15sp"
         android:textColor="#040404" />
 
 </LinearLayout>

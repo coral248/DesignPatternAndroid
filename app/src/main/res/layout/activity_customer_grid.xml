@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.smartcalsvendingmachine.VendingMachineUI.Customer.CustomerItemList" >
+    tools:context="com.smartcalsvendingmachine.VendingMachineUI.CustomerUI.CustomerItemList" >
 
     <RadioGroup
         android:id="@+id/sort_radio"

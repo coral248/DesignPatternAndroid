@@ -22,96 +22,96 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".VendingMachineUI.Customer.CustomerOptions"
+            android:name=".VendingMachineUI.CustomerUI.CustomerOptions"
             android:label="@string/title_activity_customer_start" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Customer.CustomerItemType"
+            android:name=".VendingMachineUI.CustomerUI.CustomerItemType"
             android:label="@string/title_activity_customer_item_type" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Customer.CustomerItemList"
+            android:name=".VendingMachineUI.CustomerUI.CustomerItemList"
             android:label="@string/title_activity_customer_item_list" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Customer.ItemDetail"
+            android:name=".VendingMachineUI.CustomerUI.ItemDetail"
             android:label="@string/title_activity_item_detail" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Employee.EmployeeOptions"
+            android:name=".VendingMachineUI.EmployeeUI.EmployeeOptions"
             android:label="@string/title_activity_employee_options" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Employee.RegisterAddress"
+            android:name=".VendingMachineUI.EmployeeUI.RegisterAddress"
             android:label="@string/title_activity_employee_register" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Employee.EmployeeRefill"
+            android:name=".VendingMachineUI.EmployeeUI.EmployeeRefill"
             android:label="@string/title_activity_employee_refill" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Employee.RegisterItems"
+            android:name=".VendingMachineUI.EmployeeUI.RegisterItems"
             android:label="@string/title_activity_register_items" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Employee.RegisterItemNumbers"
+            android:name=".VendingMachineUI.EmployeeUI.RegisterItemNumbers"
             android:label="@string/title_activity_register_item_numbers" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Customer.CustomerCard"
+            android:name=".VendingMachineUI.CustomerUI.CustomerCard"
             android:label="@string/title_activity_customer_card" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Customer.CustomerSearch"
+            android:name=".VendingMachineUI.CustomerUI.CustomerSearch"
             android:label="@string/title_activity_customer_suggestion" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Employee.ManageItems"
+            android:name=".VendingMachineUI.EmployeeUI.ManageItems"
             android:label="@string/title_activity_manage_items" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Employee.AddItems"
+            android:name=".VendingMachineUI.EmployeeUI.AddItems"
             android:label="@string/title_activity_add_item" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Employee.DeleteItem"
+            android:name=".VendingMachineUI.EmployeeUI.DeleteItem"
             android:label="@string/title_activity_delete_item" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Employee.AddItemNumbers"
+            android:name=".VendingMachineUI.EmployeeUI.AddItemNumbers"
             android:label="@string/title_activity_add_item_numbers" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Customer.BuyWithCoins"
+            android:name=".VendingMachineUI.CustomerUI.BuyWithCoins"
             android:label="@string/title_activity_buy_with_coins" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Customer.BuyWithCard"
+            android:name=".VendingMachineUI.CustomerUI.BuyWithCard"
             android:label="@string/title_activity_buy_with_card" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Customer.CustomerBuyCard"
+            android:name=".VendingMachineUI.CustomerUI.CustomerBuyCard"
             android:label="@string/title_activity_customer_buy_card" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Customer.CustomerCheckBalance"
+            android:name=".VendingMachineUI.CustomerUI.CustomerCheckBalance"
             android:label="@string/title_activity_customer_check_balance" >
         </activity>
         <activity
-            android:name=".VendingMachineUI.Customer.CustomerSearchResult"
+            android:name=".VendingMachineUI.CustomerUI.CustomerSearchResult"
             android:label="@string/title_activity_customer_search_result" >
         </activity>
 
         <service
-            android:name=".VendingMachineUI.Machine.MyService"
+            android:name=".VendingMachineUI.MachineUI.MyService"
             android:enabled="true"
             android:exported="true" >
         </service>
 
-        <receiver android:name=".VendingMachineUI.Machine.AlarmNotificationReceiver" />
+        <receiver android:name=".VendingMachineUI.MachineUI.AlarmNotificationReceiver" />
 
         <provider
-            android:name=".Database.VendingMachineContentProvider"
+            android:name=".SQLiteDatabase.VendingMachineContentProvider"
             android:authorities="com.smartcalsvendingmachine.provider"
             android:enabled="true"
             android:exported="true"

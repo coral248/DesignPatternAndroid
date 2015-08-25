@@ -5,12 +5,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.smartcalsvendingmachine.VendingMachineUI.Employee.AddItems">
+    tools:context="com.smartcalsvendingmachine.VendingMachineUI.EmployeeUI.AddItems">
 
     <TextView android:text="@string/items_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="30sp"
         android:textStyle="bold"/>
 
     <ListView
